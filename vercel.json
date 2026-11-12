@@ -1,0 +1,10 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "installCommand": "echo no install",
+  "buildCommand": "mkdir -p site/graph && cp -a web site/web && cp -a graph/icons site/graph/icons",
+  "outputDirectory": "site",
+  "redirects": [
+    { "source": "/", "destination": "/web/index.html", "permanent": false }
+  ]
+}
