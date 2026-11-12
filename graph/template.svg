@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1016" height="2532" viewBox="0 0 1016 2532">
+<rect width="100%" height="100%" fill="#241c14"/>
+<text x="24" y="42" fill="#f0e2c4" font-family="Arial, Helvetica, sans-serif" font-size="22">Elder overload salve</text>
+<text id="q-banner" x="430" y="42" fill="#ffe566" font-family="Arial, Helvetica, sans-serif" font-size="18">0</text>
+<text x="24" y="70" fill="#a89880" font-family="Arial, Helvetica, sans-serif" font-size="13">Expected doses on potions, items on everything else. Vials are left out. (3) → (4) is a free decant.</text>
+<text x="24" y="104" fill="#e6c98a" font-family="Arial, Helvetica, sans-serif" font-size="15">Super potions</text>
+<rect x="24" y="116" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/clean-irit.png" x="33.0" y="130.0" width="60" height="50" style="image-rendering: pixelated"/>
+<text id="q-herb-super-attack" x="97" y="188" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="63.0" y="208" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Irit</text>
+<text x="113.0" y="160.0" text-anchor="middle" fill="#8a7044" font-family="Arial, Helvetica, sans-serif" font-size="16">+</text>
+<rect x="124" y="116" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/eye-of-newt.png" x="149.0" y="142.0" width="28" height="26" style="image-rendering: pixelated"/>
+<text id="q-use-super-attack-eye-of-newt" x="197" y="188" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="163.0" y="208" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Newt</text>
+<line x1="208" y1="155.0" x2="240" y2="155.0" stroke="#c4a46a" stroke-width="2"/>
+<polygon points="240,150.0 248,155.0 240,160.0" fill="#c4a46a"/>
+<rect x="248" y="116" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/super-attack-3.png" x="266.0" y="125.0" width="42" height="60" style="image-rendering: pixelated"/>
+<text id="q-make-super-attack" x="321" y="188" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="287.0" y="208" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Super att</text>
+<rect x="24" y="220" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/clean-kwuarm.png" x="33.0" y="234.0" width="60" height="50" style="image-rendering: pixelated"/>
+<text id="q-herb-super-strength" x="97" y="292" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="63.0" y="312" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Kwuarm</text>
+<text x="113.0" y="264.0" text-anchor="middle" fill="#8a7044" font-family="Arial, Helvetica, sans-serif" font-size="16">+</text>
+<rect x="124" y="220" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/limpwurt-root.png" x="134.0" y="233.0" width="58" height="52" style="image-rendering: pixelated"/>
+<text id="q-use-super-strength-limpwurt-root" x="197" y="292" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="163.0" y="312" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Limpwurt</text>
+<line x1="208" y1="259.0" x2="240" y2="259.0" stroke="#c4a46a" stroke-width="2"/>
+<polygon points="240,254.0 248,259.0 240,264.0" fill="#c4a46a"/>
+<rect x="248" y="220" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/super-strength-3.png" x="266.0" y="229.0" width="42" height="60" style="image-rendering: pixelated"/>
+<text id="q-make-super-strength" x="321" y="292" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="287.0" y="312" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Super str</text>
+<rect x="24" y="324" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/clean-cadantine.png" x="33.0" y="338.0" width="60" height="50" style="image-rendering: pixelated"/>
+<text id="q-herb-super-defence" x="97" y="396" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="63.0" y="416" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Cadantine</text>
+<text x="113.0" y="368.0" text-anchor="middle" fill="#8a7044" font-family="Arial, Helvetica, sans-serif" font-size="16">+</text>
+<rect x="124" y="324" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/white-berries.png" x="143.0" y="340.0" width="40" height="46" style="image-rendering: pixelated"/>
+<text id="q-use-super-defence-white-berries" x="197" y="396" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="163.0" y="416" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Berries</text>
+<line x1="208" y1="363.0" x2="240" y2="363.0" stroke="#c4a46a" stroke-width="2"/>
+<polygon points="240,358.0 248,363.0 240,368.0" fill="#c4a46a"/>
+<rect x="248" y="324" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/super-defence-3.png" x="266.0" y="333.0" width="42" height="60" style="image-rendering: pixelated"/>
+<text id="q-make-super-defence" x="321" y="396" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="287.0" y="416" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Super def</text>
+<rect x="24" y="428" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/clean-lantadyme.png" x="33.0" y="442.0" width="60" height="50" style="image-rendering: pixelated"/>
+<text id="q-herb-super-magic-potion" x="97" y="500" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="63.0" y="520" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Lantadyme</text>
+<text x="113.0" y="472.0" text-anchor="middle" fill="#8a7044" font-family="Arial, Helvetica, sans-serif" font-size="16">+</text>
+<rect x="124" y="428" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/potato-cactus.png" x="136.0" y="442.0" width="54" height="50" style="image-rendering: pixelated"/>
+<text id="q-use-super-magic-potion-potato-cactus" x="197" y="500" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="163.0" y="520" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Cactus</text>
+<line x1="208" y1="467.0" x2="240" y2="467.0" stroke="#c4a46a" stroke-width="2"/>
+<polygon points="240,462.0 248,467.0 240,472.0" fill="#c4a46a"/>
+<rect x="248" y="428" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/super-magic-potion-3.png" x="266.0" y="437.0" width="42" height="60" style="image-rendering: pixelated"/>
+<text id="q-make-super-magic-potion" x="321" y="500" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="287.0" y="520" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Super mag</text>
+<rect x="24" y="532" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/clean-dwarf-weed.png" x="33.0" y="546.0" width="60" height="50" style="image-rendering: pixelated"/>
+<text id="q-herb-super-ranging-potion" x="97" y="604" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="63.0" y="624" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Dwarf weed</text>
+<text x="113.0" y="576.0" text-anchor="middle" fill="#8a7044" font-family="Arial, Helvetica, sans-serif" font-size="16">+</text>
+<rect x="124" y="532" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/wine-of-zamorak.png" x="136.0" y="542.0" width="54" height="58" style="image-rendering: pixelated"/>
+<text id="q-use-super-ranging-potion-wine-of-zamorak" x="197" y="604" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="163.0" y="624" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Wine</text>
+<line x1="208" y1="571.0" x2="240" y2="571.0" stroke="#c4a46a" stroke-width="2"/>
+<polygon points="240,566.0 248,571.0 240,576.0" fill="#c4a46a"/>
+<rect x="248" y="532" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/super-ranging-potion-3.png" x="266.0" y="541.0" width="42" height="60" style="image-rendering: pixelated"/>
+<text id="q-make-super-ranging-potion" x="321" y="604" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="287.0" y="624" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Super rng</text>
+<rect x="24" y="636" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/clean-spirit-weed.png" x="31.0" y="652.0" width="64" height="46" style="image-rendering: pixelated"/>
+<text id="q-herb-super-necromancy" x="97" y="708" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="63.0" y="728" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Spirit weed</text>
+<text x="113.0" y="680.0" text-anchor="middle" fill="#8a7044" font-family="Arial, Helvetica, sans-serif" font-size="16">+</text>
+<rect x="124" y="636" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/congealed-blood.png" x="135.0" y="652.0" width="56" height="46" style="image-rendering: pixelated"/>
+<text id="q-use-super-necromancy-congealed-blood" x="197" y="708" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="163.0" y="728" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Blood</text>
+<line x1="208" y1="675.0" x2="240" y2="675.0" stroke="#c4a46a" stroke-width="2"/>
+<polygon points="240,670.0 248,675.0 240,680.0" fill="#c4a46a"/>
+<rect x="248" y="636" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/super-necromancy-3.png" x="266.0" y="645.0" width="42" height="60" style="image-rendering: pixelated"/>
+<text id="q-make-super-necromancy" x="321" y="708" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="287.0" y="728" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Super nec</text>
+<text x="24" y="764" fill="#e6c98a" font-family="Arial, Helvetica, sans-serif" font-size="15">Extremes</text>
+<rect x="24" y="776" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/super-attack-3.png" x="42.0" y="785.0" width="42" height="60" style="image-rendering: pixelated"/>
+<text id="q-use-extreme-attack-super-attack" x="97" y="848" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="63.0" y="868" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Super att</text>
+<text x="113.0" y="820.0" text-anchor="middle" fill="#8a7044" font-family="Arial, Helvetica, sans-serif" font-size="16">+</text>
+<rect x="124" y="776" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/clean-avantoe.png" x="133.0" y="790.0" width="60" height="50" style="image-rendering: pixelated"/>
+<text id="q-use-extreme-attack-clean-avantoe" x="197" y="848" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="163.0" y="868" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Avantoe</text>
+<line x1="208" y1="815.0" x2="240" y2="815.0" stroke="#c4a46a" stroke-width="2"/>
+<polygon points="240,810.0 248,815.0 240,820.0" fill="#c4a46a"/>
+<rect x="248" y="776" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/extreme-attack-3.png" x="266.0" y="785.0" width="42" height="60" style="image-rendering: pixelated"/>
+<text id="q-make-extreme-attack" x="321" y="848" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="287.0" y="868" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Ext att</text>
+<rect x="24" y="880" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/super-strength-3.png" x="42.0" y="889.0" width="42" height="60" style="image-rendering: pixelated"/>
+<text id="q-use-extreme-strength-super-strength" x="97" y="952" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="63.0" y="972" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Super str</text>
+<text x="113.0" y="924.0" text-anchor="middle" fill="#8a7044" font-family="Arial, Helvetica, sans-serif" font-size="16">+</text>
+<rect x="124" y="880" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/clean-dwarf-weed.png" x="133.0" y="894.0" width="60" height="50" style="image-rendering: pixelated"/>
+<text id="q-use-extreme-strength-clean-dwarf-weed" x="197" y="952" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="163.0" y="972" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Dwarf weed</text>
+<line x1="208" y1="919.0" x2="240" y2="919.0" stroke="#c4a46a" stroke-width="2"/>
+<polygon points="240,914.0 248,919.0 240,924.0" fill="#c4a46a"/>
+<rect x="248" y="880" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/extreme-strength-3.png" x="266.0" y="889.0" width="42" height="60" style="image-rendering: pixelated"/>
+<text id="q-make-extreme-strength" x="321" y="952" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="287.0" y="972" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Ext str</text>
+<rect x="24" y="984" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/super-defence-3.png" x="42.0" y="993.0" width="42" height="60" style="image-rendering: pixelated"/>
+<text id="q-use-extreme-defence-super-defence" x="97" y="1056" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="63.0" y="1076" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Super def</text>
+<text x="113.0" y="1028.0" text-anchor="middle" fill="#8a7044" font-family="Arial, Helvetica, sans-serif" font-size="16">+</text>
+<rect x="124" y="984" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/clean-lantadyme.png" x="133.0" y="998.0" width="60" height="50" style="image-rendering: pixelated"/>
+<text id="q-use-extreme-defence-clean-lantadyme" x="197" y="1056" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="163.0" y="1076" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Lantadyme</text>
+<line x1="208" y1="1023.0" x2="240" y2="1023.0" stroke="#c4a46a" stroke-width="2"/>
+<polygon points="240,1018.0 248,1023.0 240,1028.0" fill="#c4a46a"/>
+<rect x="248" y="984" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/extreme-defence-3.png" x="266.0" y="993.0" width="42" height="60" style="image-rendering: pixelated"/>
+<text id="q-make-extreme-defence" x="321" y="1056" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="287.0" y="1076" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Ext def</text>
+<rect x="24" y="1088" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/super-magic-potion-3.png" x="42.0" y="1097.0" width="42" height="60" style="image-rendering: pixelated"/>
+<text id="q-use-extreme-magic-super-magic-potion" x="97" y="1160" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="63.0" y="1180" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Super mag</text>
+<text x="113.0" y="1132.0" text-anchor="middle" fill="#8a7044" font-family="Arial, Helvetica, sans-serif" font-size="16">+</text>
+<rect x="124" y="1088" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/ground-mud-runes.png" x="135.0" y="1106.0" width="56" height="42" style="image-rendering: pixelated"/>
+<text id="q-use-extreme-magic-ground-mud-runes" x="197" y="1160" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="163.0" y="1180" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Mud runes</text>
+<line x1="208" y1="1127.0" x2="240" y2="1127.0" stroke="#c4a46a" stroke-width="2"/>
+<polygon points="240,1122.0 248,1127.0 240,1132.0" fill="#c4a46a"/>
+<rect x="248" y="1088" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/extreme-magic-3.png" x="266.0" y="1097.0" width="42" height="60" style="image-rendering: pixelated"/>
+<text id="q-make-extreme-magic" x="321" y="1160" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="287.0" y="1180" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Ext mag</text>
+<rect x="24" y="1192" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/super-ranging-potion-3.png" x="42.0" y="1201.0" width="42" height="60" style="image-rendering: pixelated"/>
+<text id="q-use-extreme-ranging-super-ranging-potion" x="97" y="1264" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="63.0" y="1284" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Super rng</text>
+<text x="113.0" y="1236.0" text-anchor="middle" fill="#8a7044" font-family="Arial, Helvetica, sans-serif" font-size="16">+</text>
+<rect x="124" y="1192" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/grenwall-spikes.png" x="134.0" y="1201.0" width="58" height="60" style="image-rendering: pixelated"/>
+<text id="q-use-extreme-ranging-grenwall-spikes" x="197" y="1264" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="163.0" y="1284" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Grenwall</text>
+<line x1="208" y1="1231.0" x2="240" y2="1231.0" stroke="#c4a46a" stroke-width="2"/>
+<polygon points="240,1226.0 248,1231.0 240,1236.0" fill="#c4a46a"/>
+<rect x="248" y="1192" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/extreme-ranging-3.png" x="266.0" y="1201.0" width="42" height="60" style="image-rendering: pixelated"/>
+<text id="q-make-extreme-ranging" x="321" y="1264" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="287.0" y="1284" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Ext rng</text>
+<rect x="24" y="1296" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/super-necromancy-3.png" x="42.0" y="1305.0" width="42" height="60" style="image-rendering: pixelated"/>
+<text id="q-use-extreme-necromancy-super-necromancy" x="97" y="1368" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="63.0" y="1388" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Super nec</text>
+<text x="113.0" y="1340.0" text-anchor="middle" fill="#8a7044" font-family="Arial, Helvetica, sans-serif" font-size="16">+</text>
+<rect x="124" y="1296" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/ground-miasma-rune.png" x="135.0" y="1314.0" width="56" height="42" style="image-rendering: pixelated"/>
+<text id="q-use-extreme-necromancy-ground-miasma-rune" x="197" y="1368" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="163.0" y="1388" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Miasma</text>
+<line x1="208" y1="1335.0" x2="240" y2="1335.0" stroke="#c4a46a" stroke-width="2"/>
+<polygon points="240,1330.0 248,1335.0 240,1340.0" fill="#c4a46a"/>
+<rect x="248" y="1296" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/extreme-necromancy-3.png" x="266.0" y="1305.0" width="42" height="60" style="image-rendering: pixelated"/>
+<text id="q-make-extreme-necromancy" x="321" y="1368" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="287.0" y="1388" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Ext nec</text>
+<text x="24" y="1424" fill="#e6c98a" font-family="Arial, Helvetica, sans-serif" font-size="15">Overload</text>
+<rect x="24" y="1436" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/extreme-attack-3.png" x="42.0" y="1445.0" width="42" height="60" style="image-rendering: pixelated"/>
+<text id="q-use-overload-extreme-attack" x="97" y="1508" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="63.0" y="1528" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Ext att</text>
+<text x="113.0" y="1480.0" text-anchor="middle" fill="#8a7044" font-family="Arial, Helvetica, sans-serif" font-size="16">+</text>
+<rect x="124" y="1436" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/extreme-strength-3.png" x="142.0" y="1445.0" width="42" height="60" style="image-rendering: pixelated"/>
+<text id="q-use-overload-extreme-strength" x="197" y="1508" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="163.0" y="1528" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Ext str</text>
+<text x="213.0" y="1480.0" text-anchor="middle" fill="#8a7044" font-family="Arial, Helvetica, sans-serif" font-size="16">+</text>
+<rect x="224" y="1436" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/extreme-defence-3.png" x="242.0" y="1445.0" width="42" height="60" style="image-rendering: pixelated"/>
+<text id="q-use-overload-extreme-defence" x="297" y="1508" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="263.0" y="1528" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Ext def</text>
+<text x="313.0" y="1480.0" text-anchor="middle" fill="#8a7044" font-family="Arial, Helvetica, sans-serif" font-size="16">+</text>
+<rect x="324" y="1436" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/extreme-magic-3.png" x="342.0" y="1445.0" width="42" height="60" style="image-rendering: pixelated"/>
+<text id="q-use-overload-extreme-magic" x="397" y="1508" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="363.0" y="1528" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Ext mag</text>
+<text x="413.0" y="1480.0" text-anchor="middle" fill="#8a7044" font-family="Arial, Helvetica, sans-serif" font-size="16">+</text>
+<rect x="424" y="1436" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/extreme-ranging-3.png" x="442.0" y="1445.0" width="42" height="60" style="image-rendering: pixelated"/>
+<text id="q-use-overload-extreme-ranging" x="497" y="1508" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="463.0" y="1528" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Ext rng</text>
+<text x="513.0" y="1480.0" text-anchor="middle" fill="#8a7044" font-family="Arial, Helvetica, sans-serif" font-size="16">+</text>
+<rect x="524" y="1436" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/extreme-necromancy-3.png" x="542.0" y="1445.0" width="42" height="60" style="image-rendering: pixelated"/>
+<text id="q-use-overload-extreme-necromancy" x="597" y="1508" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="563.0" y="1528" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Ext nec</text>
+<text x="613.0" y="1480.0" text-anchor="middle" fill="#8a7044" font-family="Arial, Helvetica, sans-serif" font-size="16">+</text>
+<rect x="624" y="1436" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/clean-torstol.png" x="633.0" y="1450.0" width="60" height="50" style="image-rendering: pixelated"/>
+<text id="q-use-overload-clean-torstol" x="697" y="1508" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="663.0" y="1528" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Torstol</text>
+<line x1="708" y1="1475.0" x2="740" y2="1475.0" stroke="#c4a46a" stroke-width="2"/>
+<polygon points="740,1470.0 748,1475.0 740,1480.0" fill="#c4a46a"/>
+<rect x="748" y="1436" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/overload-3.png" x="766.0" y="1445.0" width="42" height="60" style="image-rendering: pixelated"/>
+<text id="q-make-overload" x="821" y="1508" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="787.0" y="1528" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Overload</text>
+<text x="870.0" y="1479.0" text-anchor="middle" fill="#e6c98a" font-family="Arial, Helvetica, sans-serif" font-size="12">(3) → (4)</text>
+<rect x="914" y="1436" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/overload-4.png" x="932.0" y="1445.0" width="42" height="60" style="image-rendering: pixelated"/>
+<text id="q-decant-overload" x="987" y="1508" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="953.0" y="1528" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Overload (4)</text>
+<text x="24" y="1564" fill="#e6c98a" font-family="Arial, Helvetica, sans-serif" font-size="15">Supreme overload</text>
+<rect x="24" y="1576" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/crystal-flask.png" x="44.0" y="1584.0" width="38" height="62" style="image-rendering: pixelated"/>
+<text id="q-use-supreme-overload-crystal-flask" x="97" y="1648" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="63.0" y="1668" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Flask</text>
+<text x="113.0" y="1620.0" text-anchor="middle" fill="#8a7044" font-family="Arial, Helvetica, sans-serif" font-size="16">+</text>
+<rect x="124" y="1576" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/overload-4.png" x="142.0" y="1585.0" width="42" height="60" style="image-rendering: pixelated"/>
+<text id="q-use-supreme-overload-overload" x="197" y="1648" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="163.0" y="1668" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Overload</text>
+<text x="213.0" y="1620.0" text-anchor="middle" fill="#8a7044" font-family="Arial, Helvetica, sans-serif" font-size="16">+</text>
+<rect x="224" y="1576" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/super-attack-4.png" x="242.0" y="1585.0" width="42" height="60" style="image-rendering: pixelated"/>
+<text id="q-use-supreme-overload-super-attack" x="297" y="1648" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="263.0" y="1668" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Super att</text>
+<text x="313.0" y="1620.0" text-anchor="middle" fill="#8a7044" font-family="Arial, Helvetica, sans-serif" font-size="16">+</text>
+<rect x="324" y="1576" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/super-defence-4.png" x="342.0" y="1585.0" width="42" height="60" style="image-rendering: pixelated"/>
+<text id="q-use-supreme-overload-super-defence" x="397" y="1648" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="363.0" y="1668" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Super def</text>
+<text x="413.0" y="1620.0" text-anchor="middle" fill="#8a7044" font-family="Arial, Helvetica, sans-serif" font-size="16">+</text>
+<rect x="424" y="1576" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/super-strength-4.png" x="442.0" y="1585.0" width="42" height="60" style="image-rendering: pixelated"/>
+<text id="q-use-supreme-overload-super-strength" x="497" y="1648" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="463.0" y="1668" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Super str</text>
+<text x="513.0" y="1620.0" text-anchor="middle" fill="#8a7044" font-family="Arial, Helvetica, sans-serif" font-size="16">+</text>
+<rect x="524" y="1576" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/super-ranging-potion-4.png" x="542.0" y="1585.0" width="42" height="60" style="image-rendering: pixelated"/>
+<text id="q-use-supreme-overload-super-ranging-potion" x="597" y="1648" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="563.0" y="1668" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Super rng</text>
+<text x="613.0" y="1620.0" text-anchor="middle" fill="#8a7044" font-family="Arial, Helvetica, sans-serif" font-size="16">+</text>
+<rect x="624" y="1576" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/super-magic-potion-4.png" x="642.0" y="1585.0" width="42" height="60" style="image-rendering: pixelated"/>
+<text id="q-use-supreme-overload-super-magic-potion" x="697" y="1648" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="663.0" y="1668" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Super mag</text>
+<text x="713.0" y="1620.0" text-anchor="middle" fill="#8a7044" font-family="Arial, Helvetica, sans-serif" font-size="16">+</text>
+<rect x="724" y="1576" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/super-necromancy-4.png" x="742.0" y="1585.0" width="42" height="60" style="image-rendering: pixelated"/>
+<text id="q-use-supreme-overload-super-necromancy" x="797" y="1648" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="763.0" y="1668" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Super nec</text>
+<line x1="808" y1="1615.0" x2="840" y2="1615.0" stroke="#c4a46a" stroke-width="2"/>
+<polygon points="840,1610.0 848,1615.0 840,1620.0" fill="#c4a46a"/>
+<rect x="848" y="1576" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/supreme-overload-potion-6.png" x="868.0" y="1584.0" width="38" height="62" style="image-rendering: pixelated"/>
+<text id="q-make-supreme-overload" x="921" y="1648" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="887.0" y="1668" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Supreme</text>
+<text x="24" y="1704" fill="#e6c98a" font-family="Arial, Helvetica, sans-serif" font-size="15">Elder overload</text>
+<rect x="24" y="1716" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/supreme-overload-potion-6.png" x="44.0" y="1724.0" width="38" height="62" style="image-rendering: pixelated"/>
+<text id="q-use-elder-overload-supreme-overload" x="97" y="1788" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="63.0" y="1808" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Supreme</text>
+<text x="113.0" y="1760.0" text-anchor="middle" fill="#8a7044" font-family="Arial, Helvetica, sans-serif" font-size="16">+</text>
+<rect x="124" y="1716" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/primal-extract.png" x="137.0" y="1725.0" width="52" height="60" style="image-rendering: pixelated"/>
+<text id="q-use-elder-overload-primal-extract" x="197" y="1788" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="163.0" y="1808" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Primal</text>
+<text x="213.0" y="1760.0" text-anchor="middle" fill="#8a7044" font-family="Arial, Helvetica, sans-serif" font-size="16">+</text>
+<rect x="224" y="1716" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/clean-fellstalk.png" x="233.0" y="1730.0" width="60" height="50" style="image-rendering: pixelated"/>
+<text id="q-use-elder-overload-clean-fellstalk" x="297" y="1788" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="263.0" y="1808" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Fellstalk</text>
+<line x1="308" y1="1755.0" x2="340" y2="1755.0" stroke="#c4a46a" stroke-width="2"/>
+<polygon points="340,1750.0 348,1755.0 340,1760.0" fill="#c4a46a"/>
+<rect x="348" y="1716" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/elder-overload-potion-6.png" x="368.0" y="1724.0" width="38" height="62" style="image-rendering: pixelated"/>
+<text id="q-make-elder-overload" x="421" y="1788" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="387.0" y="1808" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Elder</text>
+<text x="24" y="1844" fill="#e6c98a" font-family="Arial, Helvetica, sans-serif" font-size="15">Salve components</text>
+<rect x="24" y="1856" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/clean-fellstalk.png" x="33.0" y="1870.0" width="60" height="50" style="image-rendering: pixelated"/>
+<text id="q-herb-prayer-renewal" x="97" y="1928" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="63.0" y="1948" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Fellstalk</text>
+<text x="113.0" y="1900.0" text-anchor="middle" fill="#8a7044" font-family="Arial, Helvetica, sans-serif" font-size="16">+</text>
+<rect x="124" y="1856" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/morchella-mushroom.png" x="149.0" y="1866.0" width="28" height="58" style="image-rendering: pixelated"/>
+<text id="q-use-prayer-renewal-morchella-mushroom" x="197" y="1928" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="163.0" y="1948" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Morchella</text>
+<line x1="208" y1="1895.0" x2="240" y2="1895.0" stroke="#c4a46a" stroke-width="2"/>
+<polygon points="240,1890.0 248,1895.0 240,1900.0" fill="#c4a46a"/>
+<rect x="248" y="1856" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/prayer-renewal-3.png" x="266.0" y="1865.0" width="42" height="60" style="image-rendering: pixelated"/>
+<text id="q-make-prayer-renewal" x="321" y="1928" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="287.0" y="1948" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Renewal</text>
+<text x="370.0" y="1899.0" text-anchor="middle" fill="#e6c98a" font-family="Arial, Helvetica, sans-serif" font-size="12">(3) → (4)</text>
+<rect x="414" y="1856" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/prayer-renewal-4.png" x="432.0" y="1865.0" width="42" height="60" style="image-rendering: pixelated"/>
+<text id="q-decant-prayer-renewal" x="487" y="1928" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="453.0" y="1948" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Renewal (4)</text>
+<rect x="24" y="1960" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/clean-ranarr.png" x="33.0" y="1974.0" width="60" height="50" style="image-rendering: pixelated"/>
+<text id="q-herb-prayer-potion" x="97" y="2032" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="63.0" y="2052" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Ranarr</text>
+<text x="113.0" y="2004.0" text-anchor="middle" fill="#8a7044" font-family="Arial, Helvetica, sans-serif" font-size="16">+</text>
+<rect x="124" y="1960" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/snape-grass.png" x="129.0" y="1967.0" width="68" height="64" style="image-rendering: pixelated"/>
+<text id="q-use-prayer-potion-snape-grass" x="197" y="2032" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="163.0" y="2052" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Snape</text>
+<line x1="208" y1="1999.0" x2="240" y2="1999.0" stroke="#c4a46a" stroke-width="2"/>
+<polygon points="240,1994.0 248,1999.0 240,2004.0" fill="#c4a46a"/>
+<rect x="248" y="1960" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/prayer-potion-3.png" x="266.0" y="1969.0" width="42" height="60" style="image-rendering: pixelated"/>
+<text id="q-make-prayer-potion" x="321" y="2032" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="287.0" y="2052" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Prayer</text>
+<text x="370.0" y="2003.0" text-anchor="middle" fill="#e6c98a" font-family="Arial, Helvetica, sans-serif" font-size="12">(3) → (4)</text>
+<rect x="414" y="1960" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/prayer-potion-4.png" x="432.0" y="1969.0" width="42" height="60" style="image-rendering: pixelated"/>
+<text id="q-decant-prayer-potion" x="487" y="2032" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="453.0" y="2052" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Prayer (4)</text>
+<rect x="24" y="2064" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/clean-irit.png" x="33.0" y="2078.0" width="60" height="50" style="image-rendering: pixelated"/>
+<text id="q-herb-super-antipoison" x="97" y="2136" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="63.0" y="2156" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Irit</text>
+<text x="113.0" y="2108.0" text-anchor="middle" fill="#8a7044" font-family="Arial, Helvetica, sans-serif" font-size="16">+</text>
+<rect x="124" y="2064" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/unicorn-horn-dust.png" x="141.0" y="2088.0" width="44" height="30" style="image-rendering: pixelated"/>
+<text id="q-use-super-antipoison-unicorn-horn-dust" x="197" y="2136" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="163.0" y="2156" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Horn dust</text>
+<line x1="208" y1="2103.0" x2="240" y2="2103.0" stroke="#c4a46a" stroke-width="2"/>
+<polygon points="240,2098.0 248,2103.0 240,2108.0" fill="#c4a46a"/>
+<rect x="248" y="2064" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/super-antipoison-3.png" x="266.0" y="2073.0" width="42" height="60" style="image-rendering: pixelated"/>
+<text id="q-make-super-antipoison" x="321" y="2136" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="287.0" y="2156" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Antipois.</text>
+<text x="370.0" y="2107.0" text-anchor="middle" fill="#e6c98a" font-family="Arial, Helvetica, sans-serif" font-size="12">(3) → (4)</text>
+<rect x="414" y="2064" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/super-antipoison-4.png" x="432.0" y="2073.0" width="42" height="60" style="image-rendering: pixelated"/>
+<text id="q-decant-super-antipoison" x="487" y="2136" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="453.0" y="2156" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Antipois. (4)</text>
+<rect x="24" y="2168" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/clean-lantadyme.png" x="33.0" y="2182.0" width="60" height="50" style="image-rendering: pixelated"/>
+<text id="q-herb-antifire" x="97" y="2240" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="63.0" y="2260" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Lantadyme</text>
+<text x="113.0" y="2212.0" text-anchor="middle" fill="#8a7044" font-family="Arial, Helvetica, sans-serif" font-size="16">+</text>
+<rect x="124" y="2168" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/dragon-scale-dust.png" x="141.0" y="2192.0" width="44" height="30" style="image-rendering: pixelated"/>
+<text id="q-use-antifire-dragon-scale-dust" x="197" y="2240" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="163.0" y="2260" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Scales</text>
+<line x1="208" y1="2207.0" x2="240" y2="2207.0" stroke="#c4a46a" stroke-width="2"/>
+<polygon points="240,2202.0 248,2207.0 240,2212.0" fill="#c4a46a"/>
+<rect x="248" y="2168" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/antifire-3.png" x="266.0" y="2177.0" width="42" height="60" style="image-rendering: pixelated"/>
+<text id="q-make-antifire" x="321" y="2240" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="287.0" y="2260" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Antifire</text>
+<text x="370.0" y="2211.0" text-anchor="middle" fill="#e6c98a" font-family="Arial, Helvetica, sans-serif" font-size="12">(3) → (4)</text>
+<rect x="414" y="2168" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/antifire-4.png" x="432.0" y="2177.0" width="42" height="60" style="image-rendering: pixelated"/>
+<text id="q-decant-antifire" x="487" y="2240" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="453.0" y="2260" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Antifire (4)</text>
+<rect x="24" y="2272" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/antifire-3.png" x="42.0" y="2281.0" width="42" height="60" style="image-rendering: pixelated"/>
+<text id="q-use-super-antifire-antifire" x="97" y="2344" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="63.0" y="2364" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Antifire</text>
+<text x="113.0" y="2316.0" text-anchor="middle" fill="#8a7044" font-family="Arial, Helvetica, sans-serif" font-size="16">+</text>
+<rect x="124" y="2272" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/phoenix-feather.png" x="133.0" y="2281.0" width="60" height="60" style="image-rendering: pixelated"/>
+<text id="q-use-super-antifire-phoenix-feather" x="197" y="2344" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="163.0" y="2364" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Phoenix</text>
+<line x1="208" y1="2311.0" x2="240" y2="2311.0" stroke="#c4a46a" stroke-width="2"/>
+<polygon points="240,2306.0 248,2311.0 240,2316.0" fill="#c4a46a"/>
+<rect x="248" y="2272" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/super-antifire-3.png" x="266.0" y="2281.0" width="42" height="60" style="image-rendering: pixelated"/>
+<text id="q-make-super-antifire" x="321" y="2344" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="287.0" y="2364" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">S. antifire</text>
+<text x="370.0" y="2315.0" text-anchor="middle" fill="#e6c98a" font-family="Arial, Helvetica, sans-serif" font-size="12">(3) → (4)</text>
+<rect x="414" y="2272" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/super-antifire-4.png" x="432.0" y="2281.0" width="42" height="60" style="image-rendering: pixelated"/>
+<text id="q-decant-super-antifire" x="487" y="2344" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="453.0" y="2364" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">S. antifire (4)</text>
+<text x="24" y="2400" fill="#e6c98a" font-family="Arial, Helvetica, sans-serif" font-size="15">Elder overload salve</text>
+<rect x="24" y="2412" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/elder-overload-potion-6.png" x="44.0" y="2420.0" width="38" height="62" style="image-rendering: pixelated"/>
+<text id="q-use-elder-overload-salve-elder-overload" x="97" y="2484" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="63.0" y="2504" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Elder</text>
+<text x="113.0" y="2456.0" text-anchor="middle" fill="#8a7044" font-family="Arial, Helvetica, sans-serif" font-size="16">+</text>
+<rect x="124" y="2412" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/prayer-renewal-4.png" x="142.0" y="2421.0" width="42" height="60" style="image-rendering: pixelated"/>
+<text id="q-use-elder-overload-salve-prayer-renewal" x="197" y="2484" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="163.0" y="2504" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Renewal</text>
+<text x="213.0" y="2456.0" text-anchor="middle" fill="#8a7044" font-family="Arial, Helvetica, sans-serif" font-size="16">+</text>
+<rect x="224" y="2412" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/prayer-potion-4.png" x="242.0" y="2421.0" width="42" height="60" style="image-rendering: pixelated"/>
+<text id="q-use-elder-overload-salve-prayer-potion" x="297" y="2484" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="263.0" y="2504" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Prayer</text>
+<text x="313.0" y="2456.0" text-anchor="middle" fill="#8a7044" font-family="Arial, Helvetica, sans-serif" font-size="16">+</text>
+<rect x="324" y="2412" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/super-antipoison-4.png" x="342.0" y="2421.0" width="42" height="60" style="image-rendering: pixelated"/>
+<text id="q-use-elder-overload-salve-super-antipoison" x="397" y="2484" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="363.0" y="2504" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Antipois.</text>
+<text x="413.0" y="2456.0" text-anchor="middle" fill="#8a7044" font-family="Arial, Helvetica, sans-serif" font-size="16">+</text>
+<rect x="424" y="2412" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/antifire-4.png" x="442.0" y="2421.0" width="42" height="60" style="image-rendering: pixelated"/>
+<text id="q-use-elder-overload-salve-antifire" x="497" y="2484" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="463.0" y="2504" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Antifire</text>
+<text x="513.0" y="2456.0" text-anchor="middle" fill="#8a7044" font-family="Arial, Helvetica, sans-serif" font-size="16">+</text>
+<rect x="524" y="2412" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/super-antifire-4.png" x="542.0" y="2421.0" width="42" height="60" style="image-rendering: pixelated"/>
+<text id="q-use-elder-overload-salve-super-antifire" x="597" y="2484" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="563.0" y="2504" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">S. antifire</text>
+<line x1="608" y1="2451.0" x2="640" y2="2451.0" stroke="#c4a46a" stroke-width="2"/>
+<polygon points="640,2446.0 648,2451.0 640,2456.0" fill="#c4a46a"/>
+<rect x="648" y="2412" width="78" height="78" rx="6" fill="#3a2f24" stroke="#8a7044"/>
+<image href="icons/elder-overload-salve-6.png" x="668.0" y="2420.0" width="38" height="62" style="image-rendering: pixelated"/>
+<text id="q-make-elder-overload-salve" x="721" y="2484" text-anchor="end" fill="#ffe566" stroke="#1a1008" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">0</text>
+<text x="687.0" y="2504" text-anchor="middle" fill="#d9c7a2" font-family="Arial, Helvetica, sans-serif" font-size="11">Salve</text>
+</svg>

@@ -1,0 +1,65 @@
+# Counts are doses for potions and individual items for everything else.
+# 72 doses of supreme overload is twelve 6-dose flasks, or any mix of vial sizes.
+# Set anything you do not have to 0.
+inventory:
+  # Potions, in doses
+  Elder overload salve: 0
+  Elder overload: 0
+  Supreme overload: 0
+  Overload: 78
+  Extreme attack: 0
+  Extreme strength: 0
+  Extreme defence: 0
+  Extreme magic: 72
+  Extreme ranging: 102
+  Extreme necromancy: 23
+  Super attack: 75
+  Super strength: 21
+  Super defence: 135
+  Super magic potion: 327
+  Super ranging potion: 429
+  Super necromancy: 0
+  Prayer renewal: 256
+  Prayer potion: 356
+  Super antipoison: 0
+  Antifire: 72
+  Super antifire: 136
+
+  # Unfinished potions
+  Irit potion (unfinished): 0
+  Kwuarm potion (unfinished): 0
+  Cadantine potion (unfinished): 0
+  Dwarf weed potion (unfinished): 0
+  Lantadyme potion (unfinished): 0
+  Spirit weed potion (unfinished): 0
+  Fellstalk potion (unfinished): 15
+  Ranarr potion (unfinished): 0
+
+  # Herbs, secondaries, and other items
+  Crystal flask: 227
+  Primal extract: 6675
+  Clean fellstalk: 342
+  Clean torstol: 415
+  Clean avantoe: 0
+  Clean dwarf weed: 73
+  Clean lantadyme: 0
+  Clean irit: 0
+  Clean kwuarm: 0
+  Clean cadantine: 0
+  Clean spirit weed: 0
+  Clean ranarr: 0
+  Eye of newt: 0
+  Limpwurt root: 0
+  White berries: 0
+  Wine of Zamorak: 454
+  Potato cactus: 0
+  Grenwall spikes: 0
+  Ground mud runes: 2125
+  Ground miasma rune: 0
+  Congealed blood: 0
+  Morchella mushroom: 332
+  Snape grass: 0
+  Unicorn horn dust: 0
+  Dragon scale dust: 0
+  Phoenix feather: 0
+  Vial of water: 3529

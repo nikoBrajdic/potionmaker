@@ -1,0 +1,275 @@
+# Elder overload salve, from the RuneScape Wiki recipes as of November 2026.
+# No Herblore master cape batch recipes. Potion stocks are doses, not vials.
+# The first ingredient of each recipe cannot be saved by the Scroll of cleansing.
+# https://runescape.wiki/w/Elder_overload_salve
+
+target: Elder overload salve
+
+aliases:
+  Basic overload: Overload
+  Overload potion: Overload
+  Super magic: Super magic potion
+  Super ranging: Super ranging potion
+
+# dose: bank and recipes count doses, whatever vial size they sit in.
+# item: one physical object (herb, secondary, unfinished potion, flask).
+items:
+  Elder overload salve: dose
+  Elder overload: dose
+  Supreme overload: dose
+  Overload: dose
+  Extreme attack: dose
+  Extreme strength: dose
+  Extreme defence: dose
+  Extreme magic: dose
+  Extreme ranging: dose
+  Extreme necromancy: dose
+  Super attack: dose
+  Super strength: dose
+  Super defence: dose
+  Super magic potion: dose
+  Super ranging potion: dose
+  Super necromancy: dose
+  Prayer renewal: dose
+  Prayer potion: dose
+  Super antipoison: dose
+  Antifire: dose
+  Super antifire: dose
+  Irit potion (unfinished): item
+  Kwuarm potion (unfinished): item
+  Cadantine potion (unfinished): item
+  Dwarf weed potion (unfinished): item
+  Lantadyme potion (unfinished): item
+  Spirit weed potion (unfinished): item
+  Fellstalk potion (unfinished): item
+  Ranarr potion (unfinished): item
+  Crystal flask: item
+  Primal extract: item
+  Clean fellstalk: item
+  Clean torstol: item
+  Clean avantoe: item
+  Clean dwarf weed: item
+  Clean lantadyme: item
+  Clean irit: item
+  Clean kwuarm: item
+  Clean cadantine: item
+  Clean spirit weed: item
+  Clean ranarr: item
+  Eye of newt: item
+  Limpwurt root: item
+  White berries: item
+  Wine of Zamorak: item
+  Potato cactus: item
+  Grenwall spikes: item
+  Ground mud runes: item
+  Ground miasma rune: item
+  Congealed blood: item
+  Morchella mushroom: item
+  Snape grass: item
+  Unicorn horn dust: item
+  Dragon scale dust: item
+  Phoenix feather: item
+  Vial of water: item
+
+free_with_well:
+  - Vial of water
+
+recipes:
+  - output: Elder overload salve
+    amount: 6
+    combination: true
+    workbench: true
+    ingredients:
+      - [Elder overload, 6]
+      - [Prayer renewal, 4]
+      - [Prayer potion, 4]
+      - [Super antipoison, 4]
+      - [Antifire, 4]
+      - [Super antifire, 4]
+
+  - output: Elder overload
+    amount: 6
+    combination: true
+    workbench: true
+    ingredients:
+      - [Supreme overload, 6]
+      - [Primal extract, 1]
+      - [Clean fellstalk, 1]
+
+  - output: Supreme overload
+    amount: 6
+    combination: true
+    workbench: true
+    ingredients:
+      - [Crystal flask, 1]
+      - [Overload, 4]
+      - [Super attack, 4]
+      - [Super defence, 4]
+      - [Super strength, 4]
+      - [Super ranging potion, 4]
+      - [Super magic potion, 4]
+      - [Super necromancy, 4]
+
+  # Overload is mixed as a 3-dose vial, then decanted. Dose tracking covers that.
+  - output: Overload
+    amount: 3
+    combination: true
+    workbench: true
+    ingredients:
+      - [Extreme attack, 3]
+      - [Extreme strength, 3]
+      - [Extreme defence, 3]
+      - [Extreme magic, 3]
+      - [Extreme ranging, 3]
+      - [Extreme necromancy, 3]
+      - [Clean torstol, 1]
+
+  - output: Extreme attack
+    amount: 3
+    ingredients:
+      - [Super attack, 3]
+      - [Clean avantoe, 1]
+
+  - output: Extreme strength
+    amount: 3
+    ingredients:
+      - [Super strength, 3]
+      - [Clean dwarf weed, 1]
+
+  - output: Extreme defence
+    amount: 3
+    ingredients:
+      - [Super defence, 3]
+      - [Clean lantadyme, 1]
+
+  - output: Extreme magic
+    amount: 3
+    ingredients:
+      - [Super magic potion, 3]
+      - [Ground mud runes, 1]
+
+  - output: Extreme ranging
+    amount: 3
+    ingredients:
+      - [Super ranging potion, 3]
+      - [Grenwall spikes, 5]
+
+  - output: Extreme necromancy
+    amount: 3
+    ingredients:
+      - [Super necromancy, 3]
+      - [Ground miasma rune, 1]
+
+  - output: Super attack
+    amount: 3
+    ingredients:
+      - [Irit potion (unfinished), 1]
+      - [Eye of newt, 1]
+
+  - output: Super strength
+    amount: 3
+    ingredients:
+      - [Kwuarm potion (unfinished), 1]
+      - [Limpwurt root, 1]
+
+  - output: Super defence
+    amount: 3
+    ingredients:
+      - [Cadantine potion (unfinished), 1]
+      - [White berries, 1]
+
+  - output: Super magic potion
+    amount: 3
+    ingredients:
+      - [Lantadyme potion (unfinished), 1]
+      - [Potato cactus, 1]
+
+  - output: Super ranging potion
+    amount: 3
+    ingredients:
+      - [Dwarf weed potion (unfinished), 1]
+      - [Wine of Zamorak, 1]
+
+  - output: Super necromancy
+    amount: 3
+    ingredients:
+      - [Spirit weed potion (unfinished), 1]
+      - [Congealed blood, 5]
+
+  - output: Prayer renewal
+    amount: 3
+    ingredients:
+      - [Fellstalk potion (unfinished), 1]
+      - [Morchella mushroom, 1]
+
+  - output: Prayer potion
+    amount: 3
+    ingredients:
+      - [Ranarr potion (unfinished), 1]
+      - [Snape grass, 1]
+
+  - output: Super antipoison
+    amount: 3
+    ingredients:
+      - [Irit potion (unfinished), 1]
+      - [Unicorn horn dust, 1]
+
+  - output: Antifire
+    amount: 3
+    ingredients:
+      - [Lantadyme potion (unfinished), 1]
+      - [Dragon scale dust, 1]
+
+  - output: Super antifire
+    amount: 3
+    ingredients:
+      - [Antifire, 3]
+      - [Phoenix feather, 1]
+
+  - output: Irit potion (unfinished)
+    amount: 1
+    ingredients:
+      - [Vial of water, 1]
+      - [Clean irit, 1]
+
+  - output: Kwuarm potion (unfinished)
+    amount: 1
+    ingredients:
+      - [Vial of water, 1]
+      - [Clean kwuarm, 1]
+
+  - output: Cadantine potion (unfinished)
+    amount: 1
+    ingredients:
+      - [Vial of water, 1]
+      - [Clean cadantine, 1]
+
+  - output: Dwarf weed potion (unfinished)
+    amount: 1
+    ingredients:
+      - [Vial of water, 1]
+      - [Clean dwarf weed, 1]
+
+  - output: Lantadyme potion (unfinished)
+    amount: 1
+    ingredients:
+      - [Vial of water, 1]
+      - [Clean lantadyme, 1]
+
+  - output: Spirit weed potion (unfinished)
+    amount: 1
+    ingredients:
+      - [Vial of water, 1]
+      - [Clean spirit weed, 1]
+
+  - output: Fellstalk potion (unfinished)
+    amount: 1
+    ingredients:
+      - [Vial of water, 1]
+      - [Clean fellstalk, 1]
+
+  - output: Ranarr potion (unfinished)
+    amount: 1
+    ingredients:
+      - [Vial of water, 1]
+      - [Clean ranarr, 1]

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Overload calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="viewport">
+    <div id="world"></div>
+  </div>
+
+  <button id="reset" type="button" title="Clear completion and restore the last imported stock">
+    <svg viewBox="0 0 32 32" aria-hidden="true">
+      <circle cx="16" cy="16" r="11" fill="none" stroke="currentColor" stroke-width="2.4"/>
+      <path d="M8 8l16 16" fill="none" stroke="currentColor" stroke-width="2.4"/>
+    </svg>
+  </button>
+
+  <button id="tab" type="button" aria-label="Stock" title="Stock">
+    <img alt="" src="ui/recent-activities.png">
+  </button>
+
+  <aside id="drawer" aria-label="Stock and modifiers">
+    <header>Overloads</header>
+    <div class="drawer-body">
+    <label class="field">Batch
+      <input id="batch" type="number" min="1" max="1000000" value="100">
+    </label>
+    <label class="field">Potion
+      <select id="target"></select>
+    </label>
+    <label class="field" id="path-field" hidden>Recipe
+      <select id="path">
+        <option value="elder">Elder overload first</option>
+        <option value="salve">Supreme salve first</option>
+      </select>
+    </label>
+    <div class="row">
+      <button id="import" type="button">Import YAML</button>
+      <button id="example" type="button">Example</button>
+    </div>
+    <button id="shot" type="button">Import screenshot</button>
+    <input id="file" type="file" accept=".yaml,.yml,text/yaml" hidden>
+    <input id="shots" type="file" accept="image/*" multiple hidden>
+    <p id="notice" class="notice"></p>
+
+    <div id="review" hidden>
+      <p id="review-note" class="hint"></p>
+      <div id="review-list"></div>
+      <div class="row">
+        <button id="review-add" type="button">Add</button>
+        <button id="review-apply" type="button">Apply</button>
+        <button id="review-cancel" type="button">Cancel</button>
+      </div>
+    </div>
+
+    <h2>Modifiers</h2>
+    <div class="mods">
+      <label class="check" data-tip="5% extra potion">
+        <input id="mask" type="checkbox" checked>
+        <img class="ico" alt="" src="../graph/icons/ui/mask.png">
+        <span>Modified botanist's mask</span>
+      </label>
+      <label class="check" data-tip="10% to save a secondary">
+        <input id="scroll" type="checkbox" checked>
+        <img class="ico" alt="" src="../graph/icons/ui/scroll.png">
+        <span>Scroll of cleansing</span>
+      </label>
+      <label class="field">
+        <span class="with-icon"><img class="ico" alt="" src="../graph/icons/ui/well.png">Portable well</span>
+        <select id="well">
+          <option value="no">No</option>
+          <option value="mix">Not on combination potions</option>
+          <option value="always">Always, including combination XP</option>
+        </select>
+      </label>
+      <label class="check" data-tip="Well chance becomes 10%">
+        <input id="brooch" type="checkbox">
+        <img class="ico" alt="" src="../graph/icons/ui/brooch.png">
+        <span>Brooch of the Gods</span>
+      </label>
+      <label class="check" data-tip="No ingredient saving on overloads">
+        <input id="workbench" type="checkbox">
+        <img class="ico" alt="" src="../graph/icons/ui/workbench.png">
+        <span>Botanist's workbench</span>
+      </label>
+      <label class="check" data-tip="4 sets make 5 overloads, supremes, elders">
+        <input id="cape" type="checkbox">
+        <img class="ico" alt="" src="../graph/icons/ui/cape.png">
+        <span>Herblore master cape</span>
+      </label>
+      <label class="check" data-tip="5% of a 4-dose on 3-dose mixes">
+        <input id="amulet" type="checkbox">
+        <img class="ico" alt="" src="../graph/icons/ui/amulet.png">
+        <span>Botanist's amulet</span>
+      </label>
+      <label class="check" data-tip="20% prayer renewal (4)">
+        <input id="mory" type="checkbox">
+        <img class="ico" alt="" src="../graph/icons/ui/morytania.png">
+        <span>Morytania legs 4</span>
+      </label>
+      <label class="check" data-tip="20% super antifire (4), instead of the botanist's amulet">
+        <input id="desert" type="checkbox">
+        <img class="ico" alt="" src="../graph/icons/ui/desert.png">
+        <span>Desert amulet 4</span>
+      </label>
+      <label class="check" data-tip="10% super antipoison (4)">
+        <input id="varan" type="checkbox">
+        <img class="ico" alt="" src="../graph/icons/ui/totem.png">
+        <span>Varanusaur totem</span>
+      </label>
+      <label class="field">
+        <span class="with-icon"><img class="ico" alt="" src="../graph/icons/ui/grimoire.png">Underworld Grimoire</span>
+        <select id="grimoire">
+          <option value="0">None</option>
+          <option value="2">2 — 10% super necromancy (4)</option>
+          <option value="3">3 — also extreme necromancy</option>
+          <option value="4">4 — passive, keeps working with the brooch</option>
+        </select>
+      </label>
+      <label class="field">
+        <span class="with-icon"><img class="ico" alt="" src="../graph/icons/ui/outfit.png">Botanist's outfit</span>
+        <input id="outfit" type="number" min="0" max="5" value="0">
+      </label>
+      <label class="check" data-tip="20% combination XP">
+        <input id="meilyr" type="checkbox">
+        <img class="ico" alt="" src="../graph/icons/ui/meilyr.png">
+        <span>Meilyr hour</span>
+      </label>
+      <label class="check" data-tip="5% combination XP">
+        <input id="juju" type="checkbox">
+        <img class="ico" alt="" src="../graph/icons/ui/juju.png">
+        <span>Perfect juju / perfect plus</span>
+      </label>
+      <label class="field">
+        <span class="with-icon"><img class="ico" alt="" src="../graph/icons/ui/incense.png">Torstol incense</span>
+        <input id="incense" type="number" min="0" max="4" value="0">
+      </label>
+      <label class="field">Other XP boost %
+        <input id="boost" type="number" min="0" max="10000" value="0">
+      </label>
+      <p class="hint">The herb stands in for the unfinished potion. Factory outfit is not used. Grimoire 2 and 3 take the pocket slot, so a worn brooch replaces them.</p>
+    </div>
+
+    <h2>Stock</h2>
+    <div id="leaves"></div>
+    <details>
+      <summary>Unfinished potions</summary>
+      <div id="unfinished"></div>
+    </details>
+    <details>
+      <summary>Potions in the bank</summary>
+      <div id="potions"></div>
+    </details>
+    <div class="drawer-foot">
+      <div class="row">
+        <button id="update" type="button">Update</button>
+        <button id="clear" type="button">Clear all</button>
+      </div>
+      <p id="prices" class="hint"></p>
+    </div>
+    </div>
+  </aside>
+
+  <button id="guide-tab" type="button" aria-label="Steps" title="Steps">
+    <svg viewBox="0 0 28 28" aria-hidden="true">
+      <path d="M6 8h16M6 14h16M6 20h10" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+    </svg>
+  </button>
+  <aside id="guide" aria-label="Crafting steps">
+    <header>Steps</header>
+    <div id="guide-body" class="guide-body"></div>
+  </aside>
+
+  <section id="excerpt" aria-live="polite">
+    <header>
+      <h2 id="excerpt-title">
+        <span id="excerpt-from"></span>
+        <span id="excerpt-arrow" class="arrow" hidden></span>
+        <span id="excerpt-to"></span>
+      </h2>
+      <div class="title-actions">
+        <div class="info-wrap">
+          <button id="excerpt-info" type="button" aria-label="Details">i</button>
+          <p id="excerpt-meta"></p>
+        </div>
+        <button id="excerpt-close" type="button" aria-label="Close"></button>
+      </div>
+    </header>
+    <div id="excerpt-scroll"></div>
+  </section>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
