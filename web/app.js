@@ -62,44 +62,44 @@ const PLACE = {
   "super-strength--3": [1, 0],
   "extreme-strength--3": [2, 0],
   "super-strength--4": [4, 0],
-  "herb--clean-cadantine": [0, 1],
-  "super-defence--3": [1, 1],
-  "extreme-defence--3": [2, 1],
-  "super-defence--4": [4, 1],
-  "herb--clean-dwarf-weed": [0, 2],
-  "super-ranging-potion--3": [1, 2],
-  "extreme-ranging--3": [2, 2],
-  "super-ranging-potion--4": [4, 2],
+  "herb--clean-dwarf-weed": [0, 1],
+  "super-ranging-potion--3": [1, 1],
+  "extreme-ranging--3": [2, 1],
+  "super-ranging-potion--4": [4, 1],
+  "herb--clean-spirit-weed": [0, 2],
+  "super-necromancy--3": [1, 2],
+  "extreme-necromancy--3": [2, 2],
+  "super-necromancy--4": [4, 2],
   "overload--3": [3, SPINE],
   "overload--4": [4, SPINE],
   "supreme-overload--6": [5, SPINE],
-  "elder-overload--6": [6, SPINE],
-  "supreme-overload-salve--6": [8, SPINE],
-  "elder-overload-salve--6": [8, SPINE],
-  "herb--clean-spirit-weed": [0, 3.5],
-  "super-necromancy--3": [1, 3.5],
-  "extreme-necromancy--3": [2, 3.5],
-  "super-necromancy--4": [4, 3.5],
-  "herb--clean-irit": [0, 4.5],
-  "super-attack--3": [1, 4.5],
-  "extreme-attack--3": [2, 4.5],
-  "super-attack--4": [4, 4.5],
-  "super-antipoison--3": [1, 5.5],
-  "super-antipoison--4": [7, 5.5],
-  "herb--clean-lantadyme": [0, 6.5],
-  "super-magic-potion--3": [1, 6.5],
-  "extreme-magic--3": [2, 6.5],
-  "super-magic-potion--4": [4, 6.5],
-  "antifire--3": [1, 7.5],
-  "antifire--4": [7, 7.5],
-  "super-antifire--3": [2, 8.25],
-  "super-antifire--4": [7, 8.25],
-  "herb--clean-ranarr": [5, 1.25],
-  "prayer-potion--3": [6, 1.25],
-  "prayer-potion--4": [7, 1.25],
-  "herb--clean-fellstalk": [5, 4.25],
-  "prayer-renewal--3": [6, 4.25],
-  "prayer-renewal--4": [7, 4.25],
+  "elder-overload--6": [7, SPINE],
+  "supreme-overload-salve--6": [9, SPINE],
+  "elder-overload-salve--6": [9, SPINE],
+  "herb--clean-irit": [0, 3.5],
+  "super-attack--3": [1, 3.5],
+  "extreme-attack--3": [2, 3.5],
+  "super-attack--4": [4, 3.5],
+  "herb--clean-cadantine": [0, 4.5],
+  "super-defence--3": [1, 4.5],
+  "extreme-defence--3": [2, 4.5],
+  "super-defence--4": [4, 4.5],
+  "herb--clean-lantadyme": [0, 5.5],
+  "super-magic-potion--3": [1, 5.5],
+  "extreme-magic--3": [2, 5.5],
+  "super-magic-potion--4": [4, 5.5],
+  "herb--clean-ranarr": [6, 0.25],
+  "prayer-potion--3": [7, 0.25],
+  "prayer-potion--4": [8, 0.25],
+  "herb--clean-fellstalk": [6, 1.25],
+  "prayer-renewal--3": [7, 1.25],
+  "prayer-renewal--4": [8, 1.25],
+  "super-antipoison--3": [7, 4],
+  "super-antipoison--4": [8, 4],
+  "antifire--3": [6, 5.5],
+  "super-antifire--3": [7, 5.5],
+  "super-antifire--4": [8, 5.5],
+  "antifire--4": [8, 4.75],
 };
 
 const state = loadState();
@@ -304,6 +304,7 @@ function buildGraph() {
     if (!index.has(to)) continue;
     const floats = [];
     const links = [];
+    const plains = [];
     for (const [name, amount] of entry.ingredients) {
       if (name === "Vial of water") continue;
       const source = name.endsWith("(unfinished)")
@@ -313,8 +314,15 @@ function buildGraph() {
         ? `${slug(source)}--${amount >= 6 ? BREW[source] : amount}`
         : `herb--${slug(source)}`;
       const plain = !name.endsWith("(unfinished)") && !BREW[source];
-      if (index.has(from) && !plain) links.push(from);
+      if (index.has(from) && plain) plains.push(from);
+      else if (index.has(from)) links.push(from);
       else floats.push({ name: source, id: from });
+    }
+    for (const from of plains) {
+      const key = `${from}>${to}`;
+      if (seen.has(key)) continue;
+      seen.add(key);
+      list.push({ from, to, decant: false, inactive: false, floats: [], plain: true });
     }
     const carrier = links[0];
     for (const from of links) {
@@ -327,6 +335,7 @@ function buildGraph() {
         decant: false,
         inactive: false,
         floats: from === carrier ? floats : [],
+        carrier: from === carrier,
       });
     }
   }
@@ -340,7 +349,7 @@ function buildGraph() {
 }
 
 function placeFor(id) {
-  if (id === "elder-overload-salve--6" && state.path === "salve") return [9, SPINE];
+  if (id === "elder-overload-salve--6" && state.path === "salve") return [10, SPINE];
   return PLACE[id] ? [...PLACE[id]] : [12, 0];
 }
 
@@ -378,7 +387,7 @@ function drawWorld() {
     const row = rowsAt.index.get(node.place[1]);
     const x = pad + col * (NODE_W + hGap);
     const y = pad + rowsAt.y.get(node.place[1]);
-    at.set(node.id, { x, y, col, row });
+    at.set(node.id, { x, y, col, row, val: node.place[1] });
     occupied.add(`${col},${row}`);
     maxX = Math.max(maxX, x + NODE_W);
     maxY = Math.max(maxY, y + NODE_H);
@@ -388,20 +397,38 @@ function drawWorld() {
   for (const pos of at.values()) if (!columns.has(pos.col)) columns.set(pos.col, pos.x);
   const incoming = new Map();
   for (const edge of edges) {
-    if (edge.decant || edge.inactive || !at.has(edge.from) || !at.has(edge.to)) continue;
+    if (edge.decant || edge.plain || edge.inactive || !at.has(edge.from) || !at.has(edge.to)) continue;
     if (!incoming.has(edge.to)) incoming.set(edge.to, []);
     incoming.get(edge.to).push(edge);
   }
   const fan = fanRoutes(incoming, at, occupied);
+  const bridges = new Map();
+  const hiddenFloats = new Map();
+  for (const edge of edges) {
+    if (!edge.plain) continue;
+    const a = at.get(edge.from);
+    const b = at.get(edge.to);
+    if (!a || !b) continue;
+    const route = bridgeRoute(a, b);
+    if (route) {
+      bridges.set(edge, route);
+      continue;
+    }
+    const herb = nodes.find((node) => node.id === edge.from);
+    if (!hiddenFloats.has(edge.to)) hiddenFloats.set(edge.to, []);
+    hiddenFloats.get(edge.to).push({ name: herb.item, id: herb.id });
+  }
   for (const edge of edges) {
     const a = at.get(edge.from);
     const b = at.get(edge.to);
     if (!a || !b) continue;
+    if (edge.plain && !bridges.has(edge)) continue;
     const target = nodes.find((node) => node.id === edge.to);
     const green = target && isComplete(target) && target.active && !edge.inactive;
     const hot = forward && forward.has(edge.from) && forward.has(edge.to);
     const stroke = edge.inactive ? "#4a453e" : green ? "#63e25a" : hot ? "#f0d090" : "#8a7b66";
-    let points = fan.get(edge) || (edge.decant ? decantRoute(a, b, occupied) : null) || ellRoute(a, b, occupied);
+    let points = fan.get(edge) || bridges.get(edge) || (edge.decant ? underRoute(a, b, occupied, 9, true) : null) || ellRoute(a, b, occupied);
+    if (!points && a.row === b.row && b.col > a.col) points = underRoute(a, b, occupied, 24, false);
     if (!points) {
       points = routePoints(a, b, hGap, ROW - NODE_H, occupied, maxY, lane);
       if (points.length > 3) lane += 1;
@@ -414,8 +441,10 @@ function drawWorld() {
     svg.append(softPath(points, HALO, width + 4));
     const line = softPath(points, stroke, width);
     if (forward && !hot) line.setAttribute("opacity", "0.25");
+    line.dataset.from = edge.from;
+    line.dataset.to = edge.to;
     svg.append(line);
-    const [lx, ly] = flatPoint(points);
+    const [lx, ly] = edge.decant ? lastFlat(points) || flatPoint(points) : flatPoint(points);
     if (edge.decant) {
       const label = document.createElementNS("http://www.w3.org/2000/svg", "text");
       label.setAttribute("x", lx);
@@ -435,12 +464,14 @@ function drawWorld() {
         spot.dataset.name = `${left} dose${left === 1 ? "" : "s"} left`;
         world.append(spot);
       }
-    } else if (edge.floats?.length) {
-      const row = floatRow(edge.floats);
+    } else if (edge.floats?.length || (edge.carrier && hiddenFloats.has(edge.to))) {
+      const row = floatRow([...edge.floats, ...(hiddenFloats.get(edge.to) || [])]);
       if (forward && !hot) row.classList.add("dim");
-      const crowded = (incoming.get(edge.to)?.length || 0) >= 3 || edge.floats.length >= 2;
+      const crowded = (incoming.get(edge.to)?.length || 0) >= 3;
+      const seat = floatSeat(points);
       if (crowded && target?.item === "Overload") pinBelow(row, b.x + NODE_W / 2, b.y + NODE_H);
-      else if (crowded) pinAbove(row, b.x + NODE_W / 2, b.y + 2);
+      else if (crowded) pinAbove(row, b.x + NODE_W / 2, b.y, 4);
+      else if (seat) pinAbove(row, seat[0], seat[1], 2);
       else pinFloat(row, points, a, b, columns);
       world.append(row);
     }
@@ -459,11 +490,21 @@ function drawWorld() {
     el.style.left = `${pos.x}px`;
     el.style.top = `${pos.y}px`;
     el.dataset.name = pretty(node);
-    const count = countFor(node);
+    const count = shownCount(node);
     el.innerHTML = `<div class="slot"><img alt="" src="${iconPath(node.id)}">${countCanvas(count, isComplete(node) && node.active, MESH_COUNT)}</div>`;
     el.addEventListener("click", (event) => {
       if (event.shiftKey) toggleMark(node);
       else select(node.id);
+    });
+    el.addEventListener("mouseenter", () => {
+      for (const line of svg.querySelectorAll("[data-from]")) {
+        if (line.dataset.from !== node.id && line.dataset.to !== node.id) continue;
+        line.classList.add("lit");
+        svg.append(line);
+      }
+    });
+    el.addEventListener("mouseleave", () => {
+      for (const line of svg.querySelectorAll(".lit")) line.classList.remove("lit");
     });
     world.append(el);
     const img = el.querySelector("img");
@@ -550,7 +591,7 @@ function drawExcerpt() {
     el.style.left = `${pos.x}px`;
     el.style.top = `${pos.y}px`;
     el.dataset.name = pretty(node);
-    el.innerHTML = `<div class="slot"><img alt="" src="${iconPath(node.id)}">${countCanvas(countFor(node), isComplete(node))}</div><div class="price">${escapeHtml(price.text)}</div>`;
+    el.innerHTML = `<div class="slot"><img alt="" src="${iconPath(node.id)}">${countCanvas(shownCount(node), isComplete(node))}</div><div class="price">${escapeHtml(price.text)}</div>`;
     el.addEventListener("click", () => select(node.id));
     layer.append(el);
   }
@@ -775,9 +816,9 @@ function floatRow(floats, grid) {
   return row;
 }
 
-function pinAbove(row, x, y) {
+function pinAbove(row, x, y, gap = 8) {
   row.style.left = `${x}px`;
-  row.style.top = `${y - 8}px`;
+  row.style.top = `${y - gap}px`;
   row.style.transform = "translate(-50%, -100%)";
 }
 
@@ -976,6 +1017,12 @@ function countFor(node) {
   return figures[node.id]?.vials || 0;
 }
 
+function shownCount(node) {
+  const count = countFor(node);
+  if (node.kind !== "potion" || count === "ok" || count == null) return count;
+  return aimFigures(Math.max(1, state.batch))[node.id]?.vials ?? count;
+}
+
 function titleFor(node) {
   const count = countFor(node);
   if (!node.active) return `${pretty(node)} · other recipe`;
@@ -1077,16 +1124,66 @@ function fanRoutes(incoming, at, occupied) {
   return routes;
 }
 
-function decantRoute(a, b, occupied) {
+function underRoute(a, b, occupied, offset) {
   if (a.row !== b.row || b.x <= a.x) return null;
-  if (corridorClear(a, b, occupied)) return [[a.x + NODE_W, a.y + NODE_H / 2], [b.x, b.y + NODE_H / 2]];
-  const chan = a.y + NODE_H + 9;
+  const cy = a.y + NODE_H / 2;
+  if (corridorClear(a, b, occupied)) return [[a.x + NODE_W, cy], [b.x, cy]];
+  const chan = a.y + NODE_H + offset;
+  const turn = b.x - (NODE_W + currentHGap()) + NODE_W / 2;
   return [
     [a.x + NODE_W / 2, a.y + NODE_H],
     [a.x + NODE_W / 2, chan],
-    [b.x + NODE_W / 2, chan],
+    [turn, chan],
+    [turn, cy],
+    [b.x, cy],
+  ];
+}
+
+function bridgeRoute(a, b) {
+  const rise = a.val - b.val;
+  if (rise < -1.4 && b.col > a.col) {
+    const rail = a.y + NODE_H + 10;
+    return [
+      [a.x + NODE_W / 2, a.y + NODE_H],
+      [a.x + NODE_W / 2, rail],
+      [b.x + NODE_W / 2, rail],
+      [b.x + NODE_W / 2, b.y],
+    ];
+  }
+  if (rise < 0.9 || rise > 1.1 || b.col <= a.col + 1) return null;
+  const rail = a.y - 18;
+  return [
+    [a.x + NODE_W / 2, a.y],
+    [a.x + NODE_W / 2, rail],
+    [b.x + NODE_W / 2, rail],
     [b.x + NODE_W / 2, b.y + NODE_H],
   ];
+}
+
+function floatSeat(points) {
+  const n = points.length;
+  const [x1, y1] = points[n - 2];
+  const [x2, y2] = points[n - 1];
+  const span = Math.abs(x2 - x1);
+  if (Math.abs(y2 - y1) < 1 && span >= 36) return [x2 - Math.sign(x2 - x1) * Math.min(span / 2, 78), y1];
+  return lastFlat(points, 36);
+}
+
+function lastFlat(points, minLength = 0) {
+  const n = points.length;
+  const [x1, y1] = points[n - 2];
+  const [x2, y2] = points[n - 1];
+  if (Math.abs(y2 - y1) < 1 && Math.abs(x2 - x1) >= minLength) return [(x1 + x2) / 2, y1];
+  let best = null;
+  let length = minLength;
+  for (let i = 0; i < n - 1; i += 1) {
+    const span = Math.abs(points[i + 1][0] - points[i][0]);
+    if (Math.abs(points[i + 1][1] - points[i][1]) < 1 && span >= length) {
+      length = span;
+      best = [(points[i][0] + points[i + 1][0]) / 2, points[i][1]];
+    }
+  }
+  return best;
 }
 
 function ellRoute(a, b, occupied) {
@@ -1287,7 +1384,7 @@ function lockIconPixels(root) {
     if (img.closest("#drawer") || img.closest("#tab") || img.closest("#guide") || img.closest("#guide-tab")) continue;
     const lock = () => {
       if (!img.naturalWidth || !img.naturalHeight) return;
-      const factor = MESH_ICON;
+      const factor = img.closest("#world .mini") ? MESH_ICON * 0.6 : MESH_ICON;
       img.style.width = `${img.naturalWidth * factor}px`;
       img.style.height = `${img.naturalHeight * factor}px`;
     };

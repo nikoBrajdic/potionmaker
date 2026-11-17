@@ -161,6 +161,7 @@ input, select {
 .node.leftover .name { font-size: 10px; }
 
 #wires { position: absolute; left: 0; top: 0; overflow: visible; pointer-events: none; }
+#wires .lit { stroke: #f0d090; stroke-width: 2.4; opacity: 1; }
 #wires .hit { pointer-events: stroke; cursor: pointer; }
 #wires text, #excerpt-scroll text {
   font-family: Tahoma, sans-serif;
@@ -190,9 +191,14 @@ input, select {
   background: none;
   box-shadow: none;
 }
-.mini.complete {
-  box-shadow: 0 0 0 1px var(--green);
+#world .mini {
+  width: 34px;
+  height: 34px;
+  border: 0;
+  box-shadow: none;
+  outline: 0;
 }
+#world .mini.complete { box-shadow: none; outline: 0; }
 
 #tab {
   position: fixed;
