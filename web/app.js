@@ -53,67 +53,53 @@ const GLYPH = {
   9: ["01110", "10001", "10001", "01111", "00001", "00010", "11100"],
 };
 
+const SPINE = 2.75;
+const ROW = 104;
+const HALO = "#17130f";
+
 const PLACE = {
   "herb--clean-kwuarm": [0, 0],
-  "herb--limpwurt-root": [1, 0],
-  "super-strength--3": [2, 0],
-  "super-strength--4": [3, 0],
-  "extreme-strength--3": [3, 1],
+  "super-strength--3": [1, 0],
+  "extreme-strength--3": [2, 0],
+  "super-strength--4": [4, 0],
+  "herb--clean-cadantine": [0, 1],
+  "super-defence--3": [1, 1],
+  "extreme-defence--3": [2, 1],
+  "super-defence--4": [4, 1],
   "herb--clean-dwarf-weed": [0, 2],
-  "herb--wine-of-zamorak": [1, 2],
-  "super-ranging-potion--3": [2, 2],
-  "super-ranging-potion--4": [3, 2],
-  "herb--grenwall-spikes": [4, 3],
-  "extreme-ranging--3": [3, 3],
-  "herb--clean-spirit-weed": [0, 4],
-  "herb--congealed-blood": [1, 4],
-  "super-necromancy--3": [2, 4],
-  "super-necromancy--4": [3, 4],
-  "herb--ground-miasma-rune": [4, 5],
-  "extreme-necromancy--3": [3, 5],
-  "herb--clean-irit": [0, 6],
-  "herb--eye-of-newt": [1, 6],
-  "super-attack--3": [2, 6],
-  "super-attack--4": [3, 6],
-  "herb--clean-avantoe": [4, 7],
-  "extreme-attack--3": [3, 7],
-  "herb--unicorn-horn-dust": [1, 8],
-  "super-antipoison--3": [2, 8],
-  "super-antipoison--4": [3, 8],
-  "herb--clean-cadantine": [0, 9],
-  "herb--white-berries": [1, 9],
-  "super-defence--3": [2, 9],
-  "super-defence--4": [3, 9],
-  "extreme-defence--3": [3, 10],
-  "herb--clean-lantadyme": [0, 11],
-  "herb--potato-cactus": [1, 11],
-  "super-magic-potion--3": [2, 11],
-  "super-magic-potion--4": [3, 11],
-  "herb--ground-mud-runes": [4, 12],
-  "extreme-magic--3": [3, 12],
-  "herb--dragon-scale-dust": [1, 13],
-  "antifire--3": [2, 13],
-  "antifire--4": [3, 13],
-  "herb--phoenix-feather": [1, 14],
-  "super-antifire--3": [3, 14],
-  "super-antifire--4": [4, 14],
-  "herb--clean-ranarr": [0, 16],
-  "herb--snape-grass": [1, 16],
-  "prayer-potion--3": [2, 16],
-  "prayer-potion--4": [3, 16],
-  "herb--clean-fellstalk": [0, 17],
-  "herb--morchella-mushroom": [1, 17],
-  "prayer-renewal--3": [2, 17],
-  "prayer-renewal--4": [3, 17],
-  "herb--clean-torstol": [8, 7],
-  "overload--3": [9, 7],
-  "overload--4": [10, 7],
-  "herb--crystal-flask": [11, 7],
-  "supreme-overload--6": [12, 7],
-  "herb--primal-extract": [12, 14],
-  "elder-overload--6": [13, 14],
-  "supreme-overload-salve--6": [15, 16],
-  "elder-overload-salve--6": [15, 17],
+  "super-ranging-potion--3": [1, 2],
+  "extreme-ranging--3": [2, 2],
+  "super-ranging-potion--4": [4, 2],
+  "overload--3": [3, SPINE],
+  "overload--4": [4, SPINE],
+  "supreme-overload--6": [5, SPINE],
+  "elder-overload--6": [6, SPINE],
+  "supreme-overload-salve--6": [8, SPINE],
+  "elder-overload-salve--6": [8, SPINE],
+  "herb--clean-spirit-weed": [0, 3.5],
+  "super-necromancy--3": [1, 3.5],
+  "extreme-necromancy--3": [2, 3.5],
+  "super-necromancy--4": [4, 3.5],
+  "herb--clean-irit": [0, 4.5],
+  "super-attack--3": [1, 4.5],
+  "extreme-attack--3": [2, 4.5],
+  "super-attack--4": [4, 4.5],
+  "super-antipoison--3": [1, 5.5],
+  "super-antipoison--4": [7, 5.5],
+  "herb--clean-lantadyme": [0, 6.5],
+  "super-magic-potion--3": [1, 6.5],
+  "extreme-magic--3": [2, 6.5],
+  "super-magic-potion--4": [4, 6.5],
+  "antifire--3": [1, 7.5],
+  "antifire--4": [7, 7.5],
+  "super-antifire--3": [2, 8.25],
+  "super-antifire--4": [7, 8.25],
+  "herb--clean-ranarr": [5, 1.25],
+  "prayer-potion--3": [6, 1.25],
+  "prayer-potion--4": [7, 1.25],
+  "herb--clean-fellstalk": [5, 4.25],
+  "prayer-renewal--3": [6, 4.25],
+  "prayer-renewal--4": [7, 4.25],
 };
 
 const state = loadState();
@@ -280,9 +266,15 @@ function buildGraph() {
   const active = closure(state.target, state.path);
   const built = [];
   const index = new Map();
+  const unfinishedHerbs = new Set();
+  for (const item of active) {
+    if (!item.endsWith("(unfinished)")) continue;
+    const herb = recipeFor(item, state.path)?.ingredients.find((part) => part[0] !== "Vial of water");
+    if (herb) unfinishedHerbs.add(herb[0]);
+  }
   for (const item of active) {
     if (item === "Vial of water" || item.endsWith("(unfinished)")) continue;
-    if (!BREW[item] && !PRIMARY.has(item)) continue;
+    if (!BREW[item] && !(PRIMARY.has(item) && unfinishedHerbs.has(item))) continue;
     const doses = [];
     if (BREW[item]) {
       doses.push(BREW[item]);
@@ -297,7 +289,7 @@ function buildGraph() {
         dose,
         kind: dose ? "potion" : "herb",
         active: true,
-        place: PLACE[id] ? [...PLACE[id]] : [12, built.length % 8],
+        place: placeFor(id),
       });
       index.set(id, built[built.length - 1]);
     }
@@ -320,7 +312,8 @@ function buildGraph() {
       const from = BREW[source]
         ? `${slug(source)}--${amount >= 6 ? BREW[source] : amount}`
         : `herb--${slug(source)}`;
-      if (index.has(from)) links.push(from);
+      const plain = !name.endsWith("(unfinished)") && !BREW[source];
+      if (index.has(from) && !plain) links.push(from);
       else floats.push({ name: source, id: from });
     }
     const carrier = links[0];
@@ -344,6 +337,11 @@ function buildGraph() {
   }
   stepRight(built, list);
   return { nodes: built, edges: list };
+}
+
+function placeFor(id) {
+  if (id === "elder-overload-salve--6" && state.path === "salve") return [9, SPINE];
+  return PLACE[id] ? [...PLACE[id]] : [12, 0];
 }
 
 function stepRight(list, links) {
@@ -374,11 +372,12 @@ function drawWorld() {
   let maxY = pad;
   const at = new Map();
   const occupied = new Set();
+  const rowsAt = rowLayout(nodes);
   for (const node of nodes) {
     const col = packed.col.get(node.place[0]);
-    const row = packed.row.get(node.place[1]);
+    const row = rowsAt.index.get(node.place[1]);
     const x = pad + col * (NODE_W + hGap);
-    const y = pad + row * (NODE_H + vGap);
+    const y = pad + rowsAt.y.get(node.place[1]);
     at.set(node.id, { x, y, col, row });
     occupied.add(`${col},${row}`);
     maxX = Math.max(maxX, x + NODE_W);
@@ -387,6 +386,13 @@ function drawWorld() {
   let lane = 0;
   const columns = new Map();
   for (const pos of at.values()) if (!columns.has(pos.col)) columns.set(pos.col, pos.x);
+  const incoming = new Map();
+  for (const edge of edges) {
+    if (edge.decant || edge.inactive || !at.has(edge.from) || !at.has(edge.to)) continue;
+    if (!incoming.has(edge.to)) incoming.set(edge.to, []);
+    incoming.get(edge.to).push(edge);
+  }
+  const fan = fanRoutes(incoming, at, occupied);
   for (const edge of edges) {
     const a = at.get(edge.from);
     const b = at.get(edge.to);
@@ -395,13 +401,18 @@ function drawWorld() {
     const green = target && isComplete(target) && target.active && !edge.inactive;
     const hot = forward && forward.has(edge.from) && forward.has(edge.to);
     const stroke = edge.inactive ? "#4a453e" : green ? "#63e25a" : hot ? "#f0d090" : "#8a7b66";
-    const points = routePoints(a, b, hGap, vGap, occupied, maxY, lane);
-    if (points.length > 3) lane += 1;
+    let points = fan.get(edge) || (edge.decant ? decantRoute(a, b, occupied) : null) || ellRoute(a, b, occupied);
+    if (!points) {
+      points = routePoints(a, b, hGap, ROW - NODE_H, occupied, maxY, lane);
+      if (points.length > 3) lane += 1;
+    }
     for (const point of points) {
       maxX = Math.max(maxX, point[0]);
       maxY = Math.max(maxY, point[1]);
     }
-    const line = polyline(points, stroke, hot || green ? "2.4" : "1.6");
+    const width = hot || green ? 2.4 : 1.6;
+    svg.append(softPath(points, HALO, width + 4));
+    const line = softPath(points, stroke, width);
     if (forward && !hot) line.setAttribute("opacity", "0.25");
     svg.append(line);
     const [lx, ly] = flatPoint(points);
@@ -427,7 +438,10 @@ function drawWorld() {
     } else if (edge.floats?.length) {
       const row = floatRow(edge.floats);
       if (forward && !hot) row.classList.add("dim");
-      pinFloat(row, points, a, b, columns);
+      const crowded = (incoming.get(edge.to)?.length || 0) >= 3 || edge.floats.length >= 2;
+      if (crowded && target?.item === "Overload") pinBelow(row, b.x + NODE_W / 2, b.y + NODE_H);
+      else if (crowded) pinAbove(row, b.x + NODE_W / 2, b.y + 2);
+      else pinFloat(row, points, a, b, columns);
       world.append(row);
     }
   }
@@ -1009,6 +1023,111 @@ function polyline(points, stroke, width) {
   line.setAttribute("stroke-linejoin", "round");
   line.setAttribute("stroke-linecap", "round");
   return line;
+}
+
+function rowLayout(list) {
+  const values = [...new Set(list.map((node) => node.place[1]))].sort((a, b) => a - b);
+  const y = new Map();
+  const index = new Map();
+  let cursor = 0;
+  values.forEach((value, i) => {
+    if (i) cursor += Math.min(value - values[i - 1], 1) * ROW;
+    y.set(value, cursor);
+    index.set(value, i);
+  });
+  return { y, index };
+}
+
+function runClear(a, b, occupied) {
+  for (let col = a.col + 1; col < b.col; col += 1) if (occupied.has(`${col},${a.row}`)) return false;
+  return true;
+}
+
+function fanRoutes(incoming, at, occupied) {
+  const routes = new Map();
+  const STEP = 6;
+  const TRACK = 7;
+  for (const [to, list] of incoming) {
+    if (list.length < 3) continue;
+    const b = at.get(to);
+    const ty = b.y + NODE_H / 2;
+    const items = list
+      .map((edge) => {
+        const a = at.get(edge.from);
+        return { edge, a, sx: a.x + NODE_W, sy: a.y + NODE_H / 2 };
+      })
+      .filter((item) => item.sx < b.x - 20 && runClear(item.a, b, occupied));
+    const above = items.filter((item) => item.sy < ty - 0.5).sort((p, q) => p.sy - q.sy);
+    const direct = items.filter((item) => Math.abs(item.sy - ty) <= 0.5);
+    const below = items.filter((item) => item.sy > ty + 0.5).sort((p, q) => q.sy - p.sy);
+    const step = Math.min(STEP, 20 / Math.max(above.length, below.length, 1));
+    const half = direct.length ? 0 : step / 2;
+    above.forEach((item, k) => {
+      const port = ty - step * (above.length - k) + half;
+      const track = b.x - 12 - TRACK * k;
+      routes.set(item.edge, [[item.sx, item.sy], [track, item.sy], [track, port], [b.x, port]]);
+    });
+    for (const item of direct) routes.set(item.edge, [[item.sx, item.sy], [b.x, ty]]);
+    below.forEach((item, k) => {
+      const port = ty + step * (below.length - k) - half;
+      const track = b.x - 12 - TRACK * k;
+      routes.set(item.edge, [[item.sx, item.sy], [track, item.sy], [track, port], [b.x, port]]);
+    });
+  }
+  return routes;
+}
+
+function decantRoute(a, b, occupied) {
+  if (a.row !== b.row || b.x <= a.x) return null;
+  if (corridorClear(a, b, occupied)) return [[a.x + NODE_W, a.y + NODE_H / 2], [b.x, b.y + NODE_H / 2]];
+  const chan = a.y + NODE_H + 9;
+  return [
+    [a.x + NODE_W / 2, a.y + NODE_H],
+    [a.x + NODE_W / 2, chan],
+    [b.x + NODE_W / 2, chan],
+    [b.x + NODE_W / 2, b.y + NODE_H],
+  ];
+}
+
+function ellRoute(a, b, occupied) {
+  if (b.col <= a.col || b.row === a.row) return null;
+  const down = b.row > a.row;
+  const lo = down ? a.row + 1 : b.row;
+  const hi = down ? b.row : a.row - 1;
+  for (let row = lo; row <= hi; row += 1) if (occupied.has(`${a.col},${row}`)) return null;
+  for (let col = a.col + 1; col < b.col; col += 1) if (occupied.has(`${col},${b.row}`)) return null;
+  const y2 = b.y + NODE_H / 2;
+  return [[a.x + NODE_W / 2, down ? a.y + NODE_H : a.y], [a.x + NODE_W / 2, y2], [b.x, y2]];
+}
+
+function softPath(raw, stroke, width, radius = 8) {
+  const points = raw.filter((p, i) => i === 0 || p[0] !== raw[i - 1][0] || p[1] !== raw[i - 1][1]);
+  let d = `M ${points[0][0]} ${points[0][1]}`;
+  for (let i = 1; i < points.length - 1; i += 1) {
+    const [px, py] = points[i - 1];
+    const [cx, cy] = points[i];
+    const [nx, ny] = points[i + 1];
+    const l1 = Math.hypot(cx - px, cy - py);
+    const l2 = Math.hypot(nx - cx, ny - cy);
+    const r = Math.min(radius, l1 / 2, l2 / 2);
+    d += ` L ${cx + ((px - cx) / l1) * r} ${cy + ((py - cy) / l1) * r} Q ${cx} ${cy} ${cx + ((nx - cx) / l2) * r} ${cy + ((ny - cy) / l2) * r}`;
+  }
+  const last = points[points.length - 1];
+  d += ` L ${last[0]} ${last[1]}`;
+  const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+  path.setAttribute("d", d);
+  path.setAttribute("fill", "none");
+  path.setAttribute("stroke", stroke);
+  path.setAttribute("stroke-width", width);
+  path.setAttribute("stroke-linejoin", "round");
+  path.setAttribute("stroke-linecap", "round");
+  return path;
+}
+
+function pinBelow(row, x, y) {
+  row.style.left = `${x}px`;
+  row.style.top = `${y + 6}px`;
+  row.style.transform = "translate(-50%, 0)";
 }
 
 function corridorClear(a, b, occupied) {
